@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" /> 
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- <script
+src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+<script src="logic.js"></script>
+<div id="main">
+
+<h1 id="title">Survey Form</h1>
+<div class="form-container">
+<p id="description">Let me know how I can improve Broke designer's blog</p>
+<form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+  <div class="labels">
+  <label id="name-label">*Name:</label>
+  </div>
+  <div class="Inputs">
+  <input "name" id="name" class="input-field" placeholder="Enter your name" required>
+  </div>
+  <div class="labels">
+  <label id="email-label">*Email:</label>
+  </div>
+  <div class="Inputs">
+  <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+  </div>
+  <div class="labels">
+  <label id="number-label">*Age:</label>
+  </div>
+  <div class="Inputs">
+  <input "number" type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+  </div>
+  <div class="labels">
+  <label>Which option best describes your current role?</label>
+  </div>
+  <div class="Inputs">
+  <select id="dropdown" class="dropdown">
+    <option disabled value>
+      Select and option
+    </option>
+    <option value="student">
+      Student</option>
+    <option value="job">Full time job</option>
+    <option value="preferNo">Prefer not to say</option>
+    <option value="other">Other</option>
+    
+  </select>
+  </div>
+  <div>
+    <div class="rowTab">
+  <div class="labels">
+  <label for="userRating">* How likely is that you would recommend this blog to a friend?</label>
+  </div>
+      <div class="rightTab">
+  <ul style="list-style: none;">
+    <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings"></label></li>
+    <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings"></label></li>
+    <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings"></label></li>
+  </ul>
+      </div>
+  </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="most-like">What do you like most in Broke Designer: </label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="challenges">Blog articles</option>
+      <option value="projects">Timelapse Videos</option>
+      <option value="community">Recomendations</option>
+      <option value="openSource">Life updates</option>
+    </select>
+      </div>
+    </div>
+   <div class="rowTab"> 
+     <div class="labels">
+  <label for="preferences">Things that you would like to see more in my Youtube channel<br>(Check all that apply): </label>
+     </div>
+     <div class="rightTab">
+  <ul>
+    <li><label><input name="prefer" value="1" type="checkbox"></label>Productivity for adults</li>
+    <li><label><input name="prefer" value="2" type="checkbox"></label>Daily vlogs</li>
+    <li><label><input name="prefer" value="3" type="checkbox"></label>My capsule wardrobe</li>
+    <li><label><input name="prefer" value="4" type="checkbox"></label>Debt free journey</li>
+    <li><label><input name="prefer" value="5" type="checkbox"></label>Budgeting</li>
+    <li><label><input name="prefer" value="6" type="checkbox"></label>Morning/Evening routine</li>
+    <li><label><input name="prefer" value="7" type="checkbox"></label>How to stay productive</li>
+    <li><label><input name="prefer" value="8" type="checkbox"></label>Cleaning and organization</li>
+    <li><label><input name="prefer" value="9" type="checkbox"></label>Apartment tour</li>
+    <li><label><input name="prefer" value="10" type="checkbox"></label>How to's on a budget</li>
+  </ul>
+    </div>
+     </div>
+    <div class="rowTab">
+    <div class="labels">
+        <label for="comments">Any Comments or Suggestions?</label>
+      </div>
+    <div class="rightTab">
+  <textarea id=¨comments¨ class="input-field"placeholder="Enter your comment here..." style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+    </div>
+    </div>
+  <button id="submit" type="submit">Submit</button>
+</form>
+</div>
+
+
+
+</div>
+</body>
+</html>
